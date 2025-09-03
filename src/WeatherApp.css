@@ -1,6 +1,19 @@
-/* WeatherApp.css - Fully Responsive Version */
+/* WeatherApp.css - Fixed Full Screen Version */
+/* Reset all margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
 .weather-app {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +22,6 @@
   position: relative;
   overflow: hidden;
   transition: background 1.5s ease;
-  box-sizing: border-box;
 }
 
 /* Background Themes */
@@ -79,7 +91,6 @@
   z-index: 1;
   animation: fadeIn 0.8s ease-out;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 20px auto;
 }
 
 @keyframes fadeIn {
@@ -116,9 +127,9 @@
   transition: all 0.3s;
   font-family: 'Poppins', sans-serif;
   background: rgba(39, 38, 38, 0.9);
+  color: white;
   box-shadow: 0 2px 8px rgba(165, 156, 156, 0.1);
   width: 100%;
-  box-sizing: border-box;
 }
 
 .city-input:focus, .country-input:focus {
@@ -326,7 +337,6 @@
   .weather-container {
     width: 95%;
     padding: 15px;
-    margin: 0 auto;
   }
   
   .app-title {
